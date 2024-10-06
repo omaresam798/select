@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", system-ui;
+    color: white;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: hsla(0, 0%, 5%, 1);
+}
+
+.master {
+    width: 75%;
+    background-color: hsla(228, 11%, 9%, 1);
+    height: 660px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-child-master {
+    width: 316px;
+    background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+    height: 350px;
+    border-radius: 20px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    /* margin-top: 10px; */
+    width: 35px;
+    height: 35px;
+    background-color: hsl(224, 10%, 21%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.para {
+    margin-top: 20px;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    border: none;
+}
+
+.buttons-group button {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+
+.button-master button {
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: var(--Orange);
+    height: 43px;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+
+
+.buttons-group button:hover {
+    background-color: var(--Orange);
+    color: black;
+}
+
+.button-master button:hover {
+    background-color: white;
+}
+
+.first-child-master {
+    display: block;
+}
+
+.scond-child-master {
+    display: none;
+    width: 316px;
+    background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+    /* height: 350px; */
+    border-radius: 20px;
+    padding: 20px 25px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.selected {
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
